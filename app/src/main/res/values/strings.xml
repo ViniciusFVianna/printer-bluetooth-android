@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Bluetooth Printer</string>
 
+    <!-- menu title -->
+    <string name="menu_devices">Dispositivos</string>
+    <string name="menu_tickets">Conprovantes</string>
+    <string name="menu_itens">Itens</string>
+    <string name="menu_cupons">Cupons</string>
 
 </resources>

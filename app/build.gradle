@@ -64,6 +64,10 @@ dependencies {
     implementation 'com.github.clans:fab:1.6.4'
     implementation 'com.android.support:multidex:1.0.3'
 
+    // Pacotes da impressora
+    implementation project(':btsdk')
+    implementation project(':zixng')
+
     //    Mascara de campos
     implementation 'com.github.santalu:mask-edittext:1.1.1'
 

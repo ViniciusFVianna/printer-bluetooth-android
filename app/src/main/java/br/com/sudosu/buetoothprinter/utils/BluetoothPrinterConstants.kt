@@ -53,5 +53,28 @@ object BluetoothPrinterConstants {
     val FORMATTER_DAY_NAME = SimpleDateFormat("EEEE", LOCALE_BR)
     val FORMATTER_DATE_PREVIOUS_PAYMENT = SimpleDateFormat("MMMM/yyyy", LOCALE_BR)
 
-    val GENDER_MY_PROFILE = "genderMyProfile"
+
+    // Message types sent from the BluetoothService Handler
+    const val MESSAGE_STATE_CHANGE = 1
+    const val MESSAGE_READ = 2
+    const val MESSAGE_WRITE = 3
+    const val MESSAGE_DEVICE_NAME = 4
+    const val MESSAGE_TOAST = 5
+    const val MESSAGE_CONNECTION_LOST = 6
+    const val MESSAGE_UNABLE_CONNECT = 7
+
+    // Intent request codes
+    const val REQUEST_CONNECT_DEVICE = 1
+    const val REQUEST_ENABLE_BT = 2
+    const val REQUEST_CHOSE_BMP = 3
+    const val REQUEST_CAMER = 4
+
+    // Key names received from the BluetoothService Handler
+    const val DEVICE_NAME = "device_name"
+    const val TOAST = "toast"
+
+    //QRcode
+    const val QR_WIDTH = 350
+    const val QR_HEIGHT = 350
+
 }
