@@ -43,6 +43,7 @@ android {
 dependencies {
     def lifecycle_version = "2.2.0-rc01"
     def nav_version = "2.2.0-rc01"
+    def room_version = "1.1.1"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -80,4 +81,8 @@ dependencies {
 
     //viewPager2
     implementation 'androidx.viewpager2:viewpager2:1.0.0-rc01'
+
+    // Room
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    kapt "android.arch.persistence.room:compiler:$room_version"
 }
