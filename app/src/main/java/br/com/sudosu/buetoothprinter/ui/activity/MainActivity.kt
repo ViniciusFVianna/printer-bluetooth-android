@@ -1,7 +1,8 @@
-package br.com.sudosu.buetoothprinter
+package br.com.sudosu.buetoothprinter.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.com.sudosu.buetoothprinter.R
 
 class MainActivity : AppCompatActivity() {
 
