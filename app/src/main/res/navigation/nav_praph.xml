@@ -10,4 +10,24 @@
         android:name="br.com.sudosu.buetoothprinter.ui.scene.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="br.com.sudosu.buetoothprinter.ui.scene.products.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" />
+    <fragment
+        android:id="@+id/cuponsFragment"
+        android:name="br.com.sudosu.buetoothprinter.ui.scene.cupons.CuponsFragment"
+        android:label="fragment_cupons"
+        tools:layout="@layout/fragment_cupons" />
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="br.com.sudosu.buetoothprinter.ui.scene.ticket.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" />
+    <fragment
+        android:id="@+id/addCupomFragment"
+        android:name="br.com.sudosu.buetoothprinter.ui.scene.cupons.AddCupomFragment"
+        android:label="fragment_add_cupom"
+        tools:layout="@layout/fragment_add_cupom" />
 </navigation>

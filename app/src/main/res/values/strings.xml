@@ -6,5 +6,12 @@
     <string name="menu_tickets">Conprovantes</string>
     <string name="menu_itens">Itens</string>
     <string name="menu_cupons">Cupons</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_add">Add</string>
+
+    <!-- Headers -->
+    <string name="header_add_cupom">Adicionar Cupom</string>
+    <string name="header_home">Início</string>
+
 
 </resources>

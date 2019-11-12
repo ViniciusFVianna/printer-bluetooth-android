@@ -27,7 +27,7 @@
         app:labelVisibilityMode="labeled"
         android:textAlignment="center"
         app:itemTextColor="@color/printer_color_white"
-        app:itemIconTint="@color/printer_color_white_alfa"
+        app:itemIconTint="@color/printer_color_white"
         android:background="@color/printer_color_dark_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

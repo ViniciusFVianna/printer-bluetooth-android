@@ -12,6 +12,7 @@ import androidx.multidex.MultiDex
 import androidx.multidex.MultiDexApplication
 import br.com.sudosu.buetoothprinter.utils.BluetoothPrinterConstants.NOTIF_CHANNEL_ID
 import br.com.sudosu.buetoothprinter.utils.BluetoothPrinterConstants.NOTIF_CHANNEL_NAME
+import io.realm.Realm
 
 class BluetoothPrintApplication : MultiDexApplication(){
 
@@ -21,6 +22,7 @@ class BluetoothPrintApplication : MultiDexApplication(){
         super.onCreate()
         context = this
         appInstance = this
+        Realm.init(this)
 
         createNotificationChannels()
     }

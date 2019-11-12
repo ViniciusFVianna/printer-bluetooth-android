@@ -8,6 +8,8 @@ apply plugin: 'kotlin-kapt'
 
 apply plugin: "androidx.navigation.safeargs.kotlin"
 
+apply plugin: 'realm-android'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -82,7 +84,7 @@ dependencies {
     //viewPager2
     implementation 'androidx.viewpager2:viewpager2:1.0.0-rc01'
 
-    // Room
-    implementation "android.arch.persistence.room:runtime:$room_version"
-    kapt "android.arch.persistence.room:compiler:$room_version"
+    //Persistencia com Realm
+    implementation 'io.realm:android-adapters:2.1.1'
+
 }

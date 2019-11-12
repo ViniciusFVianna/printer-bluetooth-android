@@ -2,21 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/productFragment"
+    <item android:id="@+id/homeFragment"
+        android:title="@string/menu_home"
+        android:icon="@drawable/icon_home"/>
+
+    <item android:id="@+id/productsFragment"
         android:title="@string/menu_devices"
-        android:icon="@mipmap/ic_launcher"
-        app:showAsAction="always"/>
-    <item
+        android:icon="@drawable/icon_product" />
+
+    <item android:id="@+id/cuponsFragment"
         android:title="@string/menu_itens"
-        app:showAsAction="always"
-        android:icon="@mipmap/ic_launcher"/>
-    <item
+        android:icon="@drawable/icon_list_cupom"/>
+
+    <item android:id="@+id/ticketFragment"
         android:title="@string/menu_tickets"
-        app:showAsAction="always"
-        android:icon="@mipmap/ic_launcher"/>
-    <item
+        android:icon="@drawable/icon_ticket"/>
+
+    <item android:id="@+id/addCupomFragment"
         android:title="@string/menu_cupons"
-        app:showAsAction="always"
-        android:icon="@mipmap/ic_launcher"/>
+        android:icon="@drawable/icon_add_cupom"/>
 
 </menu>
