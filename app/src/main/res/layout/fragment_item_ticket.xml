@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.scene.ticket.ItemTicketFragment">
+
+    <include layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/itemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_date"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/printer_color_light_blue"
+                android:textSize="@dimen/text_size_10"
+                android:layout_marginEnd="@dimen/margin_size_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin_size_10"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itemDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="@dimen/margin_size_10"
+                android:layout_marginTop="@dimen/margin_size_20"
+                android:layout_marginStart="@dimen/margin_size_24"
+                android:layout_marginEnd="@dimen/margin_size_24"
+                android:background="@drawable/input_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemDate">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/itemDescriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_size_10"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="@dimen/text_size_14"
+                    android:layout_gravity="center"
+                    android:hint="@string/item_description"
+                    android:textColor="@color/printer_color_dark_blue"
+                    android:textColorHint="@color/printer_color_input_blue"
+                    android:background="@android:color/transparent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itemQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="@dimen/margin_size_10"
+                android:layout_marginTop="@dimen/margin_size_20"
+                android:layout_marginStart="@dimen/margin_size_24"
+                android:layout_marginEnd="@dimen/margin_size_24"
+                android:background="@drawable/input_border"
+                app:layout_constraintEnd_toEndOf="@id/itemDescription"
+                app:layout_constraintStart_toStartOf="@id/itemDescription"
+                app:layout_constraintTop_toBottomOf="@id/itemDescription" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/itemQuantityText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_size_10"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="@dimen/text_size_14"
+                    android:layout_gravity="center"
+                    android:hint="@string/item_quantity"
+                    android:textColor="@color/printer_color_dark_blue"
+                    android:textColorHint="@color/printer_color_input_blue"
+                    android:background="@android:color/transparent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itemValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="@dimen/margin_size_10"
+                android:layout_marginTop="@dimen/margin_size_20"
+                android:layout_marginStart="@dimen/margin_size_24"
+                android:layout_marginEnd="@dimen/margin_size_24"
+                android:background="@drawable/input_border"
+                app:layout_constraintEnd_toEndOf="@id/itemDescription"
+                app:layout_constraintStart_toStartOf="@id/itemDescription"
+                app:layout_constraintTop_toBottomOf="@id/itemQuantity">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/itemValueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="@dimen/text_size_14"
+                    android:padding="@dimen/margin_size_10"
+                    android:layout_gravity="center"
+                    android:hint="@string/item_value"
+                    android:textColor="@color/printer_color_dark_blue"
+                    android:textColorHint="@color/printer_color_input_blue"
+                    android:background="@android:color/transparent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itemType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="@dimen/margin_size_10"
+                android:layout_marginTop="@dimen/margin_size_20"
+                android:layout_marginStart="@dimen/margin_size_24"
+                android:layout_marginEnd="@dimen/margin_size_24"
+                android:background="@drawable/input_border"
+                app:layout_constraintEnd_toEndOf="@id/itemDescription"
+                app:layout_constraintStart_toStartOf="@id/itemDescription"
+                app:layout_constraintTop_toBottomOf="@id/itemValue">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/itemTypeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_size_10"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="@dimen/text_size_14"
+                    android:layout_gravity="center"
+                    android:hint="@string/item_type"
+                    android:textColor="@color/printer_color_dark_blue"
+                    android:textColorHint="@color/printer_color_input_blue"
+                    android:background="@android:color/transparent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnItemSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_save"
+                android:textAllCaps="false"
+                style="@style/ButtonTextStyle"
+                android:background="@drawable/button_color"
+                android:layout_marginEnd="@dimen/margin_size_24"
+                android:layout_marginStart="@dimen/margin_size_24"
+                android:layout_marginTop="@dimen/margin_size_40"
+                app:layout_constraintEnd_toEndOf="@id/itemDescription"
+                app:layout_constraintStart_toStartOf="@id/itemDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemType"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,10 +24,19 @@
         android:id="@+id/ticketFragment"
         android:name="br.com.sudosu.buetoothprinter.ui.scene.ticket.TicketFragment"
         android:label="fragment_ticket"
-        tools:layout="@layout/fragment_ticket" />
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_itemTicketFragment"
+            app:destination="@id/itemTicketFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addCupomFragment"
         android:name="br.com.sudosu.buetoothprinter.ui.scene.cupons.AddCupomFragment"
         android:label="fragment_add_cupom"
         tools:layout="@layout/fragment_add_cupom" />
+    <fragment
+        android:id="@+id/itemTicketFragment"
+        android:name="br.com.sudosu.buetoothprinter.ui.scene.ticket.ItemTicketFragment"
+        android:label="fragment_item_ticket"
+        tools:layout="@layout/fragment_item_ticket" />
 </navigation>

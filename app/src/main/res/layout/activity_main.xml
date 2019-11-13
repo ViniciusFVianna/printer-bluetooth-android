@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/navigation_menu"
-        app:labelVisibilityMode="labeled"
+        app:labelVisibilityMode="unlabeled"
         android:textAlignment="center"
         app:itemTextColor="@color/printer_color_white"
         app:itemIconTint="@color/printer_color_white"

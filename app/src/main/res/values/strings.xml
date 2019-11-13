@@ -14,10 +14,16 @@
     <string name="header_home">Início</string>
     <string name="header_device">Dispositivos</string>
     <string name="header_itens">Item</string>
-    <string name="hader_tickets">Conprovantes</string>
+    <string name="header_tickets">Conprovantes</string>
     <string name="header_cupons">Cupons</string>
 
     <!-- Placeholders -->
     <string name="placeholder_date">00/00/0000</string>
+    <string name="item_description">Descrição</string>
+    <string name="item_quantity">Quantidade</string>
+    <string name="item_value">Valor</string>
+    <string name="item_type">Tipo</string>
+    <string name="button_save">Salvar</string>
+
 
 </resources>
