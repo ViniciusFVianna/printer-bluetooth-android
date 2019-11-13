@@ -11,4 +11,6 @@ object RealmDataBase {
         .build()
     val realm = Realm.setDefaultConfiguration(config)
 
+    val getIntance = Realm.getDefaultInstance()
+
 }

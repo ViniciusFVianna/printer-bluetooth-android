@@ -12,6 +12,12 @@
     <!-- Headers -->
     <string name="header_add_cupom">Adicionar Cupom</string>
     <string name="header_home">Início</string>
+    <string name="header_device">Dispositivos</string>
+    <string name="header_itens">Item</string>
+    <string name="hader_tickets">Conprovantes</string>
+    <string name="header_cupons">Cupons</string>
 
+    <!-- Placeholders -->
+    <string name="placeholder_date">00/00/0000</string>
 
 </resources>

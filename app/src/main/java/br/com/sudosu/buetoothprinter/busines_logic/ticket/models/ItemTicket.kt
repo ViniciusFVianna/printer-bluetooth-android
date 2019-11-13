@@ -5,8 +5,8 @@ import io.realm.annotations.PrimaryKey
 
 open class ItemTicket(
     @PrimaryKey
-    var id : Long = 0,
+    var id : Long? = null,
     var description: String? = null,
     var type: String? = null,
-    var value: Double = 0.0
+    var value: Double? = null
 ): RealmObject()
