@@ -6,7 +6,11 @@ import android.text.format.DateUtils
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import br.com.sudosu.buetoothprinter.R
+import br.com.sudosu.buetoothprinter.busines_logic.ticket.models.ItemTicket
+import br.com.sudosu.buetoothprinter.busines_logic.ticket.models.Ticket
+import br.com.sudosu.buetoothprinter.extensions.string
 import br.com.sudosu.buetoothprinter.ui.fragments.BaseFragment
 import br.com.sudosu.buetoothprinter.utils.BluetoothPrinterConstants
 import kotlinx.android.synthetic.main.fragment_item_ticket.*
@@ -17,6 +21,8 @@ import java.util.*
  * A simple [Fragment] subclass.
  */
 class ItemTicketFragment : BaseFragment() {
+
+    private val viewModel: TicketViewModel by activityViewModels()
 
     override var title: String = ""
     override var colorTitle: Int = R.color.printer_color_white
@@ -45,7 +51,17 @@ class ItemTicketFragment : BaseFragment() {
 
         updateTitle(getString(R.string.header_itens))
         val calendar = Calendar.getInstance().timeInMillis
-        itemDate.text = getTimeStamp(calendar)
+//        itemDate.text = getTimeStamp(calendar)
+
+        viewModel.setDescription(itemDescriptionText.string)
+        viewModel.setTimeStamp(calendar)
+        viewModel.viewState.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+            itemDate.text = getTimeStamp(it.timeStamp!!)
+        })
+    }
+
+    private fun saveItem(ticket: Ticket){
+        viewModel.performedTicket(ticket)
     }
 
     private fun getTimeStamp(timeinMillies: Long): String? {
